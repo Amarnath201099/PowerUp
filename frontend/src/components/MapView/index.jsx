@@ -55,7 +55,7 @@ const MapView = ({ chargers }) => {
     }
     try {
       const response = await fetch(
-        `http://localhost:5000/api/geocode?q=${encodeURIComponent(
+        `https://powerup-6csa.onrender.com/api/geocode?q=${encodeURIComponent(
           inputLocation
         )}`
       );

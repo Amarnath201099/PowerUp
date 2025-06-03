@@ -166,8 +166,8 @@ const ChargerStationForm = ({ initialValues, onSubmit }) => {
     }
 
     const url = initialValues
-      ? `http://localhost:5000/api/charging_stations/${initialValues.id}`
-      : "http://localhost:5000/api/charging_stations";
+      ? `https://powerup-6csa.onrender.com/api/charging_stations/${initialValues.id}`
+      : "https://powerup-6csa.onrender.com/api/charging_stations";
     const method = initialValues ? "PUT" : "POST";
 
     const authorizationToken = Cookies.get("jwt_token");

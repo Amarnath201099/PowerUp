@@ -36,7 +36,7 @@ const Dashboard = () => {
   const fetchChargers = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/charging_stations",
+        "https://powerup-6csa.onrender.com/api/charging_stations",
         {
           headers: {
             "Content-Type": "application/json",
@@ -71,7 +71,7 @@ const Dashboard = () => {
 
       try {
         const response = await fetch(
-          `http://localhost:5000/api/charging_stations?${queryParams.toString()}`,
+          `https://powerup-6csa.onrender.com/api/charging_stations?${queryParams.toString()}`,
           {
             headers: {
               "Content-Type": "application/json",
@@ -107,7 +107,7 @@ const Dashboard = () => {
     };
     try {
       const response = await fetch(
-        `http://localhost:5000/api/charging_stations/${id}`,
+        `https://powerup-6csa.onrender.com/api/charging_stations/${id}`,
         options
       );
       const data = await response.json();
