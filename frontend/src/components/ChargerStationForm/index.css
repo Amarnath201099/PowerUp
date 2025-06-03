@@ -1,0 +1,67 @@
+.modal-form h2 {
+  margin-top: 0px;
+  font-size: 20px;
+  margin-bottom: 12px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.modal-form input,
+.modal-form select,
+.modal-form button {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  padding: 6px;
+  font-size: 10px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+
+.modal-form button {
+  background-color: #ffd700;
+  border: 0px;
+  border-radius: 4px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+}
+
+.btn-use-location {
+  margin-top: 8px;
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: #eeeeee;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.error-text {
+  color: red;
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-form h2 {
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+
+  .modal-form input,
+  .modal-form select,
+  .modal-form button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

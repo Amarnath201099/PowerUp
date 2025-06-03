@@ -1,0 +1,51 @@
+.map-section {
+  height: 300px;
+  width: 100%;
+  margin-top: 12px;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+.leaflet-top {
+  z-index: 999;
+}
+
+.location-search input,
+.location-search button {
+  box-sizing: border-box;
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  padding: 6px;
+  font-size: 10px;
+  font-weight: 600;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+}
+
+.location-search input {
+  width: 100%;
+  margin-right: 10px;
+}
+
+.location-search button {
+  background-color: #ffd700;
+  border: 0px;
+  padding: 8px 10px;
+}
+
+.location-search-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .map-section {
+    height: 100%;
+    width: 50%;
+    margin-top: 0px;
+  }
+}

@@ -1,0 +1,134 @@
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: "Inter", sans-serif;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 70vh;
+  box-sizing: border-box;
+}
+
+/* Ensure section grows with content, no clipping */
+.section-box {
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Full-width, uniform, clean buttons */
+.about-heading {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 16px 20px;
+  transition: background 0.3s ease;
+  box-sizing: border-box;
+}
+
+.about-heading:hover {
+  background-color: #f9f9f9;
+}
+
+.about-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  background-color: #ffd700;
+  transition: width 0.5s ease;
+}
+
+.about-heading.active::after {
+  width: 100%;
+}
+
+/* Animated, visible section content */
+.about-section {
+  padding: 16px 20px;
+  animation: fadeIn 0.4s ease-in-out;
+  font-size: 12px;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+.about-section ul {
+  padding-left: 20px;
+  margin-top: 6px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Social link styling */
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  margin: 10px 0px;
+  font-size: 16px;
+  gap: 5px;
+  text-align: center;
+}
+
+.icon-link:hover {
+  text-decoration: underline;
+  color: #333;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-container {
+    padding: 60px 80px;
+  }
+
+  .about-heading {
+    font-size: 16px;
+  }
+
+  .about-section {
+    font-size: 14px;
+  }
+
+  .social-links {
+    margin-top: 80px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .icon-link {
+    font-size: 18px;
+  }
+}
