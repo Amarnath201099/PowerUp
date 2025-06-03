@@ -28,8 +28,8 @@ The application allows users to register/login securely, manage EV charging stat
 
 ## 🌐 Live Demo & Deployment Links
 
-- **Frontend:** [https://your-frontend-url.com](https://your-frontend-url.com)
-- **Backend API:** [https://your-backend-api-url.com](https://your-backend-api-url.com)
+- **Frontend:** [https://PowerUp-frontend-url.com](https://power-up-eight.vercel.app/authentication)
+- **Backend API:** [https://PowerUp-backend-api-url.com](https://powerup-6csa.onrender.com)
 
 ---
 

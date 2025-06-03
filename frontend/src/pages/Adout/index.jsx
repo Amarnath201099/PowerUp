@@ -101,7 +101,7 @@ const About = () => {
 
         <div className="social-links">
           <a
-            href="https://github.com/your-github-repo"
+            href="https://github.com/Amarnath201099/PowerUp.git"
             target="_blank"
             rel="noopener noreferrer"
             className="icon-link"
